@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NY Times RESTful API</title>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+        <script type="text/javascript" src="./assets/scripts/jquery-2.2.4.js"></script>
+        <script type="text/javascript" src="./assets/scripts/script.js" defer></script>
+
+    </head>
+    
+    <body>
+        <div id='help'>
+            <h1>NY Times RESTful API</h1>
+            
+            <div class="request">
+                <h2>Get articles</h2>
+                <p>Returns a list of all articles sorted in alphabetical order</p>
+                <p>HTPP Request: <a href="http://127.0.0.1:8080/articles">http://127.0.0.1:8080/articles</a></p>
+            </div>
+            
+            <div class="request">
+                <h2>Get authors</h2>
+                <p>Returns a list of all known authors sorted in alphabetical order</p>
+                <p>HTPP Request: <a href="http://127.0.0.1:8080/authors">http://127.0.0.1:8080/authors</a></p>
+            </div>
+            
+            <div class="request">
+                <h2>Get short urls</h2>
+                <p>Returns a list of all short urls sorted and grouped by publish date</p>
+                <p>HTPP Request: <a href="http://127.0.0.1:8080/short_urls">http://127.0.0.1:8080/short_urls</a></p>
+            </div>
+            
+            <div class="request">
+                <h2>Get hyperlinked article images</h2>
+                <p>Returns a list of all articles as hyperlinked thumbnail images</p>
+                <p>HTPP Request: <a href="http://127.0.0.1:8080/articles_images">http://127.0.0.1:8080/articles_images</a></p>
+            </div>
+            
+            <div class="request">
+                <h2>Get des_facet tags</h2>
+                <p>Returns a list of des_facet tags displayed as tag cloud</p>
+                <p>HTPP Request: <a href="http://127.0.0.1:8080/articles?field=des_facet">http://127.0.0.1:8080/articles?field=des_facet</a></p>
+            </div>
+            
+            <div class="request">
+                <h2>Get article details</h2>
+                <p>Returns the details of the article index given</p>
+                <p>If no index is provided, the index is defaulted to 0</p>
+                <p>If the given index is invalid, nothing is returned</p>
+                <p>Example HTPP Request: <a href="http://127.0.0.1:8080/articles/0">http://127.0.0.1:8080/articles/0</a></p>
+            </div>
+            
+        </div>
+
+        <div id='REST'>
+            <div id="button_container">
+                <button id="get_all_articles">Get articles</button>
+                <button id="get_all_authors">Get authors</button>
+                <button id="get_all_short_urls">Get short URLs</button>
+                <button id="get_all_articles_image">Get hyperlinked article images</button>
+                <button id="get_des_facet_tags">Get des_facet tags</button>
+                <button id="get_article_details">Get article details</button> <input type="text" id="article_num" placeholder="Enter article index">
+            </div>
+
+            <div id="content">
+            </div>
+        </div>
+        
+        <footer>
+            <hr/>
+            <p>By Kevin Thich</p>
+        </footer>
+        
+
+    </body>
+    
+</html>
