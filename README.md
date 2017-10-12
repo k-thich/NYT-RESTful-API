@@ -2,7 +2,7 @@
 Simple RESTful API that reads a [NYT JSON](http://developer.nytimes.com/top_stories.json) file deployed on a Node.js server
 
 ## Setup
-Use ```node server.js``` to run the server and make requests on port `8080` with `http://127.0.0.1:8080/`
+Use ```node server.js``` to run the server and make requests on port `8080` with `http://127.0.0.1:8080/` 
 
 ## Endpoints
 - `/article` -- Gets a list of all articles with the following fields for each article:[title, published_date, abstract, short_url]
